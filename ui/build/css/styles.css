@@ -1,3 +1,4 @@
+/** core **/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 *
@@ -27,30 +28,17 @@ canvas
 }
 
 
-canvas
+/** atomes	**/
+.homeTitle
 {
-    position: relative;
-    z-index: 0;
-}
-
-
-h1
-{
-    position: absolute;
     z-index: 100;
-    top: 20%;
-    right: auto;
-    bottom: 0;
-    left: 10%;
 
     height: 180px;
     margin: auto;
 
     color: white;
 }
-
-
-h1 .name
+.homeTitleName
 {
     font-family: 'Open Sans';
     font-size: 30px;
@@ -61,16 +49,16 @@ h1 .name
 
     margin-bottom: 40px;
 }
-
-
-h1 .name span
+.homeTitleName::after
 {
     font-size: 14px;
     font-weight: 300;
+
+    margin-left: 10px;
+
+    content: ' ~   Ory';
 }
-
-
-h1 .work
+.homeTitleWork
 {
     font-family: 'Open Sans Condensed';
     font-size: 55px;
@@ -78,21 +66,13 @@ h1 .work
     line-height: 40px;
 }
 
-
+/** molecules	**/
 .menu
 {
-    position: absolute;
-    top: 20%;
-    right: auto;
-    bottom: 0;
-    left: 50%;
-
     height: 150px;
     margin: auto;
 }
-
-
-.menu li
+.menuItem
 {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -103,9 +83,7 @@ h1 .work
 
     color: white;
 }
-
-
-.menu li a
+.menuItemLink
 {
     position: relative;
 
@@ -113,9 +91,127 @@ h1 .work
 
     padding: 0 20px;
 }
-
-
-.menu li a:after
+.menuItemLink span
+{
+    transition: color .35s;
+}
+.menuItemLink span:nth-child( 2 )
+{
+    transition-delay: calc(.015s * 2);
+}
+.menuItemLink span:nth-child( 3 )
+{
+    transition-delay: calc(.015s * 3);
+}
+.menuItemLink span:nth-child( 4 )
+{
+    transition-delay: calc(.015s * 4);
+}
+.menuItemLink span:nth-child( 5 )
+{
+    transition-delay: calc(.015s * 5);
+}
+.menuItemLink span:nth-child( 6 )
+{
+    transition-delay: calc(.015s * 6);
+}
+.menuItemLink span:nth-child( 7 )
+{
+    transition-delay: calc(.015s * 7);
+}
+.menuItemLink span:nth-child( 8 )
+{
+    transition-delay: calc(.015s * 8);
+}
+.menuItemLink span:nth-child( 9 )
+{
+    transition-delay: calc(.015s * 9);
+}
+.menuItemLink span:nth-child( 10 )
+{
+    transition-delay: calc(.015s * 10);
+}
+.menuItemLink span:nth-child( 11 )
+{
+    transition-delay: calc(.015s * 11);
+}
+.menuItemLink span:nth-child( 12 )
+{
+    transition-delay: calc(.015s * 12);
+}
+.menuItemLink span:nth-child( 13 )
+{
+    transition-delay: calc(.015s * 13);
+}
+.menuItemLink span:nth-child( 14 )
+{
+    transition-delay: calc(.015s * 14);
+}
+.menuItemLink span:nth-child( 15 )
+{
+    transition-delay: calc(.015s * 15);
+}
+.menuItemLink span:nth-child( 16 )
+{
+    transition-delay: calc(.015s * 16);
+}
+.menuItemLink span:nth-child( 17 )
+{
+    transition-delay: calc(.015s * 17);
+}
+.menuItemLink span:nth-child( 18 )
+{
+    transition-delay: calc(.015s * 18);
+}
+.menuItemLink span:nth-child( 19 )
+{
+    transition-delay: calc(.015s * 19);
+}
+.menuItemLink span:nth-child( 20 )
+{
+    transition-delay: calc(.015s * 20);
+}
+.menuItemLink span:nth-child( 21 )
+{
+    transition-delay: calc(.015s * 21);
+}
+.menuItemLink span:nth-child( 22 )
+{
+    transition-delay: calc(.015s * 22);
+}
+.menuItemLink span:nth-child( 23 )
+{
+    transition-delay: calc(.015s * 23);
+}
+.menuItemLink span:nth-child( 24 )
+{
+    transition-delay: calc(.015s * 24);
+}
+.menuItemLink span:nth-child( 25 )
+{
+    transition-delay: calc(.015s * 25);
+}
+.menuItemLink span:nth-child( 26 )
+{
+    transition-delay: calc(.015s * 26);
+}
+.menuItemLink span:nth-child( 27 )
+{
+    transition-delay: calc(.015s * 27);
+}
+.menuItemLink span:nth-child( 28 )
+{
+    transition-delay: calc(.015s * 28);
+}
+.menuItemLink span:nth-child( 29 )
+{
+    transition-delay: calc(.015s * 29);
+}
+.menuItemLink span:nth-child( 30 )
+{
+    transition-delay: calc(.015s * 30);
+}
+.menuItemLink:after
 {
     position: absolute;
     top: 0;
@@ -134,12 +230,38 @@ h1 .work
 
     background-color: white;
 }
-
-
-
-
-
-.menu li:last-child a:after
+.menuItemLink:hover span
+{
+    color: #00bcd4;
+}
+.menuItem:last-child .menuItemLink:after
 {
     display: none;
+}
+
+
+/** organismes	**/
+
+
+/** views **/
+canvas
+{
+    position: relative;
+    z-index: 0;
+}
+.homeTitle
+{
+    position: absolute;
+    top: 20%;
+    right: auto;
+    bottom: 0;
+    left: 10%;
+}
+.menu
+{
+    position: absolute;
+    top: 20%;
+    right: auto;
+    bottom: 0;
+    left: 50%;
 }

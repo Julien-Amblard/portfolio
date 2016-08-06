@@ -13,10 +13,12 @@ const livereload 		= require('gulp-livereload');
 const styleDown 		= require('gulp-styledown');
 const colorFunction 	= require('postcss-color-function');
 const at2x 				= require('postcss-at2x');
+const cssFor			= require('postcss-for');
 
 const  procs = [
 	prefixer({browsers: ['last 6 versions']}),
 	precss,
+	cssFor,
 	position,
 	pixrem,
 	at2x,

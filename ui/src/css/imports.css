@@ -1,5 +1,17 @@
-@import url("fonts.css");
-@import url("main.css");
+/** core **/
+@import url("core/fonts.css");
+@import url("core/main.css");
 
 
-@import url('home.css');
+/** atomes	**/
+@import url('components/atomes/titles.css');
+
+/** molecules	**/
+@import url('components/molecules/menu.css');
+
+
+/** organismes	**/
+
+
+/** views **/
+@import url('views/home.css');

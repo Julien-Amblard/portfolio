@@ -13,7 +13,7 @@ let portfolio = (() => {
 	let init = () => {
 
 		//admeton on est sur la home
-		layers.addParticles( home );
+		layers.addParticles( homeBgParticles );
 		layers.start()
 
 	}	

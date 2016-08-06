@@ -1,0 +1,34 @@
+
+
+.homeTitle {
+
+	margin: auto;
+	z-index: 100;
+	height: 180px;
+	color: white;
+
+	&Name {
+		display: block;
+		margin-bottom: 40px;
+
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-style: italic;
+		font-size: 30px;
+
+		&::after {
+			content: ' ~   Ory';
+			margin-left: 10px;
+			font-weight: 300;
+			font-size: 14px;
+		}
+	}
+
+	&Work {
+		font-family: 'Open Sans Condensed';
+		font-weight: 300;
+		font-size: 55px;
+		line-height: 40px;
+	}
+
+}

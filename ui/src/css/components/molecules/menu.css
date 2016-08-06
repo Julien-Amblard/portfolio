@@ -1,0 +1,64 @@
+
+
+
+
+.menu {
+	margin: auto;
+	height: 150px;
+	
+	&Item {
+		display: inline-block;
+		color: white;
+		font-family: 'Open Sans';
+		font-size: 16px;
+		font-weight: 300;
+		font-style: italic;
+
+		&Link {
+			display: block;
+			position: relative;
+			padding:  0 20px;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute  0 -3px 0 auto;
+				margin: auto;
+				width: 5px;
+				height: 1px;
+				background-color: white;
+				pointer-events: none;
+			}
+
+			span {
+				transition: color .35s;
+			}
+
+
+
+			@for $i from 2 to 30 {
+				
+				span:nth-child( $i ) {
+					transition-delay : calc(.015s * $i) ;
+				}
+
+			}
+
+			&:hover span {
+				color: #00bcd4;
+			}
+
+
+		}
+
+		&:last-child {
+			.menuItemLink:after {
+				display: none;
+			}
+		}
+	}
+
+
+}
+
+

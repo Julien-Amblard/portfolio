@@ -23,6 +23,7 @@
     "gulp-watch": "^4.3.5",
     "pixrem": "^3.0.0",
     "postcss-at2x": "^2.0.0",
+    "postcss-for": "^2.1.1",
     "postcss-color-function": "^2.0.1",
     "postcss-short-position": "^1.0.0",
     "precss": "^1.4.0"

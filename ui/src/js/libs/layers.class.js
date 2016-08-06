@@ -79,7 +79,7 @@ class Layers {
 
 	draw () {
 
-		this.ctx.fillStyle = "rgba( 0, 0, 0, 0.4 )";
+		this.ctx.fillStyle = "rgba( 0, 0, 0, 0.3 )";
 		this.ctx.fillRect( 0, 0, oSize.w, oSize.h );
 
 		//pour chaques names
