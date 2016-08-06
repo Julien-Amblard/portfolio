@@ -24,14 +24,15 @@
 				display: block;
 				position: absolute  0 -3px 0 auto;
 				margin: auto;
-				width: 5px;
-				height: 1px;
+				width: 3px;
+				height: 3px;
+				border-radius: 100%;
 				background-color: white;
 				pointer-events: none;
 			}
 
 			span {
-				transition: color .35s;
+				transition: color 1.2s;
 			}
 
 
@@ -39,7 +40,7 @@
 			@for $i from 2 to 30 {
 				
 				span:nth-child( $i ) {
-					transition-delay : calc(.015s * $i) ;
+					transition-delay : calc(.019s * $i) ;
 				}
 
 			}

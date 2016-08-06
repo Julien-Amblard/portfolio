@@ -93,123 +93,123 @@ canvas
 }
 .menuItemLink span
 {
-    transition: color .35s;
+    transition: color 1.2s;
 }
 .menuItemLink span:nth-child( 2 )
 {
-    transition-delay: calc(.015s * 2);
+    transition-delay: calc(.019s * 2);
 }
 .menuItemLink span:nth-child( 3 )
 {
-    transition-delay: calc(.015s * 3);
+    transition-delay: calc(.019s * 3);
 }
 .menuItemLink span:nth-child( 4 )
 {
-    transition-delay: calc(.015s * 4);
+    transition-delay: calc(.019s * 4);
 }
 .menuItemLink span:nth-child( 5 )
 {
-    transition-delay: calc(.015s * 5);
+    transition-delay: calc(.019s * 5);
 }
 .menuItemLink span:nth-child( 6 )
 {
-    transition-delay: calc(.015s * 6);
+    transition-delay: calc(.019s * 6);
 }
 .menuItemLink span:nth-child( 7 )
 {
-    transition-delay: calc(.015s * 7);
+    transition-delay: calc(.019s * 7);
 }
 .menuItemLink span:nth-child( 8 )
 {
-    transition-delay: calc(.015s * 8);
+    transition-delay: calc(.019s * 8);
 }
 .menuItemLink span:nth-child( 9 )
 {
-    transition-delay: calc(.015s * 9);
+    transition-delay: calc(.019s * 9);
 }
 .menuItemLink span:nth-child( 10 )
 {
-    transition-delay: calc(.015s * 10);
+    transition-delay: calc(.019s * 10);
 }
 .menuItemLink span:nth-child( 11 )
 {
-    transition-delay: calc(.015s * 11);
+    transition-delay: calc(.019s * 11);
 }
 .menuItemLink span:nth-child( 12 )
 {
-    transition-delay: calc(.015s * 12);
+    transition-delay: calc(.019s * 12);
 }
 .menuItemLink span:nth-child( 13 )
 {
-    transition-delay: calc(.015s * 13);
+    transition-delay: calc(.019s * 13);
 }
 .menuItemLink span:nth-child( 14 )
 {
-    transition-delay: calc(.015s * 14);
+    transition-delay: calc(.019s * 14);
 }
 .menuItemLink span:nth-child( 15 )
 {
-    transition-delay: calc(.015s * 15);
+    transition-delay: calc(.019s * 15);
 }
 .menuItemLink span:nth-child( 16 )
 {
-    transition-delay: calc(.015s * 16);
+    transition-delay: calc(.019s * 16);
 }
 .menuItemLink span:nth-child( 17 )
 {
-    transition-delay: calc(.015s * 17);
+    transition-delay: calc(.019s * 17);
 }
 .menuItemLink span:nth-child( 18 )
 {
-    transition-delay: calc(.015s * 18);
+    transition-delay: calc(.019s * 18);
 }
 .menuItemLink span:nth-child( 19 )
 {
-    transition-delay: calc(.015s * 19);
+    transition-delay: calc(.019s * 19);
 }
 .menuItemLink span:nth-child( 20 )
 {
-    transition-delay: calc(.015s * 20);
+    transition-delay: calc(.019s * 20);
 }
 .menuItemLink span:nth-child( 21 )
 {
-    transition-delay: calc(.015s * 21);
+    transition-delay: calc(.019s * 21);
 }
 .menuItemLink span:nth-child( 22 )
 {
-    transition-delay: calc(.015s * 22);
+    transition-delay: calc(.019s * 22);
 }
 .menuItemLink span:nth-child( 23 )
 {
-    transition-delay: calc(.015s * 23);
+    transition-delay: calc(.019s * 23);
 }
 .menuItemLink span:nth-child( 24 )
 {
-    transition-delay: calc(.015s * 24);
+    transition-delay: calc(.019s * 24);
 }
 .menuItemLink span:nth-child( 25 )
 {
-    transition-delay: calc(.015s * 25);
+    transition-delay: calc(.019s * 25);
 }
 .menuItemLink span:nth-child( 26 )
 {
-    transition-delay: calc(.015s * 26);
+    transition-delay: calc(.019s * 26);
 }
 .menuItemLink span:nth-child( 27 )
 {
-    transition-delay: calc(.015s * 27);
+    transition-delay: calc(.019s * 27);
 }
 .menuItemLink span:nth-child( 28 )
 {
-    transition-delay: calc(.015s * 28);
+    transition-delay: calc(.019s * 28);
 }
 .menuItemLink span:nth-child( 29 )
 {
-    transition-delay: calc(.015s * 29);
+    transition-delay: calc(.019s * 29);
 }
 .menuItemLink span:nth-child( 30 )
 {
-    transition-delay: calc(.015s * 30);
+    transition-delay: calc(.019s * 30);
 }
 .menuItemLink:after
 {
@@ -221,13 +221,14 @@ canvas
 
     display: block;
 
-    width: 5px;
-    height: 1px;
+    width: 3px;
+    height: 3px;
     margin: auto;
 
     content: '';
     pointer-events: none;
 
+    border-radius: 100%;
     background-color: white;
 }
 .menuItemLink:hover span

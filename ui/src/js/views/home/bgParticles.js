@@ -5,7 +5,7 @@ let homeBgParticles = ( () => {
 	let count 			= 3000;//nb particules
 	let r 				= oSize.w * 2.3;//teinte de la couleur
 	let color 			= ', 60%, 70%';//couleur
-	let colorH			= rand( 190, 210);//saturation hsla
+	let colorH			= rand( 190, 210);//teinte hsla
 	let centerVariable	= 10;
 	let aParticlesType 	= [
 
@@ -75,10 +75,8 @@ let homeBgParticles = ( () => {
 		//decrease his life
 		p.life -= 0.1;
 
-		if ( p.ro > p.rMax || p.ro < p.rMin ) 
-			p.life = 0;
-		else 
-			p.ro += p.speed;
+		if ( p.ro > p.rMax || p.ro < p.rMin )  p.life = 0;
+		else  p.ro += p.speed;
 		
 
 		//update pos
@@ -106,7 +104,7 @@ let homeBgParticles = ( () => {
 			}
 		//if not gonna die
 		}else{
-			//and you just born, you can appear my baby
+			//and you just born, you can appear
 			if( p.a < p.ta )
 				p.a += 0.005;
 
@@ -117,11 +115,12 @@ let homeBgParticles = ( () => {
 
 	let draw = ( p, ctx ) => {
 
+		ctx.lineCap = "round";
 
   		ctx.beginPath();
-		ctx.moveTo( p.tx1, p.ty1 );
+		ctx.moveTo( p.tx2, p.ty2 );
 		ctx.lineTo( p.x, p.y);
-		ctx.lineWidth = p.r * 2;
+		ctx.lineWidth = p.r * 1.2;
 		ctx.strokeStyle = 'hsla( ' + ( colorH + p.colorRand ) + color + ', ' + ( p.a - .2 ) + ' )';
 		ctx.stroke();
 
@@ -135,9 +134,9 @@ let homeBgParticles = ( () => {
 
 
 		ctx.beginPath();
-		ctx.moveTo( p.tx2, p.ty2 );
+		ctx.moveTo( p.tx, p.ty );
 		ctx.lineTo( p.x, p.y);
-		ctx.lineWidth = p.r / 2;
+		ctx.lineWidth = p.r * .8;
 		ctx.strokeStyle = 'hsla( ' + ( colorH + p.colorRand ) + color + ', ' + ( p.a + .2 ) + ' )';
 		ctx.stroke();
 
