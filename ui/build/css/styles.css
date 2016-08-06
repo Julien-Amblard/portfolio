@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+*
+{
+    box-sizing: border-box;
+}
+html,
+body
+{
+    overflow: hidden;
+
+    height: 100%;
+    margin: 0;
+
+    background-color: black;
+}
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+canvas
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+canvas
+{
+    position: relative;
+    z-index: 0;
+}
+
+
+h1
+{
+    position: absolute;
+    z-index: 100;
+    top: 20%;
+    right: auto;
+    bottom: 0;
+    left: 10%;
+
+    height: 180px;
+    margin: auto;
+
+    color: white;
+}
+
+
+h1 .name
+{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    display: block;
+
+    margin-bottom: 40px;
+}
+
+
+h1 .name span
+{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+h1 .work
+{
+    font-family: 'Open Sans Condensed';
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+
+.menu
+{
+    position: absolute;
+    top: 20%;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+
+    height: 150px;
+    margin: auto;
+}
+
+
+.menu li
+{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+
+    display: inline-block;
+
+    color: white;
+}
+
+
+.menu li a
+{
+    position: relative;
+
+    display: block;
+
+    padding: 0 20px;
+}
+
+
+.menu li a:after
+{
+    position: absolute;
+    top: 0;
+    right: -3px;
+    bottom: 0;
+    left: auto;
+
+    display: block;
+
+    width: 5px;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    pointer-events: none;
+
+    background-color: white;
+}
+
+
+
+
+
+.menu li:last-child a:after
+{
+    display: none;
+}
