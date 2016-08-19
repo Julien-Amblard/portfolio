@@ -14,6 +14,8 @@ var portfolio = function () {
 		//admeton on est sur la home
 		layers.addParticles(homeBgParticles);
 		layers.start();
+
+		Events.on('suppHomePart', layers.suppPart);
 	};
 
 	return {

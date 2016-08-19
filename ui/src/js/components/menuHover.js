@@ -4,6 +4,21 @@ let menuHover = (() => {
 
 	let $menuItems;
 
+
+	let changeHomeColor  = ( e ) => {
+
+		let $el = e.currentTarget;
+		let color = parseInt( $el.getAttribute('data-color') );
+		Events.emit('changeHomeColor', color );
+
+	}
+
+	let bind = () => {
+
+		for (var i = 0; i < $menuItems.length; i++) $menuItems[i].addEventListener( 'mouseenter', changeHomeColor, false );
+
+	}
+
 	let buildTxt = ( item ) => {
 
 		
@@ -24,6 +39,8 @@ let menuHover = (() => {
 		$menuItems = document.querySelectorAll('.menu li a');
 
 		for (var i = 0; i < $menuItems.length; i++) buildTxt( $menuItems[i]  );
+
+		bind();
 		
 	}
 

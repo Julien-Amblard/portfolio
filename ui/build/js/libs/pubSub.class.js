@@ -4,14 +4,14 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Events = function () {
-    function Events() {
-        _classCallCheck(this, Events);
+var pubSub = function () {
+    function pubSub() {
+        _classCallCheck(this, pubSub);
 
         this.events = {};
     }
 
-    _createClass(Events, [{
+    _createClass(pubSub, [{
         key: "on",
         value: function on(eventName, fn) {
 
@@ -43,5 +43,7 @@ var Events = function () {
         }
     }]);
 
-    return Events;
+    return pubSub;
 }();
+
+var Events = new pubSub();

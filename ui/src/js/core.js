@@ -16,6 +16,10 @@ let portfolio = (() => {
 		layers.addParticles( homeBgParticles );
 		layers.start()
 
+
+		Events.on('suppHomePart', layers.suppPart)
+
+
 	}	
 
 	return {

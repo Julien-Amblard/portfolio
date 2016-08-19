@@ -10,6 +10,7 @@ class Layers {
 
 	}
 
+
 	removeParticles ( _name = undefined, _count = false ) {
 
 
@@ -29,6 +30,7 @@ class Layers {
 		this.particles[ _settings.name ] 			= {};
 		this.particles[ _settings.name ].p			= [];
 		this.particles[ _settings.name ].update 	= _settings.update;
+		this.particles[ _settings.name ].updateOut 	= _settings.updateOut;
 		this.particles[ _settings.name ].draw 		= _settings.draw;
 
 		if( _settings.globalUpdate && typeof _settings.globalUpdate == 'function' )
@@ -68,7 +70,7 @@ class Layers {
 			for (let j = this.particles[name].p.length - 1; j >= 0; j--) {
 
 				//je lance la fonction update avec en parametre les proprietes de la particules
-				this.particles[name].p[j] = this.particles[name].update( this.particles[name].p[j] );
+				this.particles[name].p[j] = this.particles[name].update( this.particles[name].p[j], j );
 
 			}
 			

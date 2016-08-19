@@ -13,4 +13,5 @@ var oSize = {
 var log = function log(msg) {
 	console.log(msg);
 };
+
 window.addEventListener('resize', globalResize, false);

@@ -5,4 +5,5 @@ let oSize 	= {
 	w : window.innerWidth
 };
 let log = (msg) => { console.log(msg) }
+
 window.addEventListener( 'resize', globalResize, false);

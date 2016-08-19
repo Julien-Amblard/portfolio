@@ -1,5 +1,10 @@
 
 
+body {
+	perspective : 2000px;
+	perspective-origin : 50% 50%;
+	transform-style : preserve-3d;
+}
 
 
 .menu {
@@ -32,7 +37,7 @@
 			}
 
 			span {
-				transition: color 1.2s;
+				transition: color .3s;
 			}
 
 
@@ -45,8 +50,14 @@
 
 			}
 
-			&:hover span {
+			&.link-me:hover span {
 				color: #00bcd4;
+			}
+			&.link-cv:hover span {
+				color: #ffeb3b;
+			}
+			&.link-contact:hover span {
+				color: #beff00;
 			}
 
 

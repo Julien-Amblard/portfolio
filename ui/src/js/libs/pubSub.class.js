@@ -1,7 +1,7 @@
 
 
 
-class Events {
+class pubSub {
 
     constructor(){
         this.events = {};
@@ -28,10 +28,12 @@ class Events {
     emit(eventName, data) {
 
         if (this.events[eventName]) {
-            this.events[eventName].forEach(function(fn) {
+            this.events[eventName].forEach( (fn) => {
                 fn(data);
             });
         }
     }
 
 }
+
+let Events = new pubSub();
